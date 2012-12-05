@@ -26,7 +26,3 @@ The practical work consists of constructing a compiler for a small object-orient
 * to be able to construct a compiler from such specifications with state-of-the-art compiler construction tools
 * to understand different language aspects
 * to understand the working of compiler components realising these aspects
-
-## License
-
-IN4303 material by Guido Wachsmuth is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US "Creative Commons License").
