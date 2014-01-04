@@ -115,6 +115,10 @@ Finally, you need to extend your code generator to cover parameters, local varia
 6. Provide a rule for `stmt-to-jbc`, which translates array assignments to variables from MiniJava into sequences of Java bytecode instructions.
    This rule should call `exp-to-jbc` to translate expressions to Java bytecode sequences.
 
+### Note about Jasmin
+
+Even though in MiniJava some keywords are reserved, Jasmin may add a couple of its own. This are names which are a valid statement in Jasmin itself, such as `field` or `class`. Our parser does not reject these, but those cause parse errors when compiling the Jasmin file to Java in quite some Jasmin implementations since these may not have the latest updates (Debian for example). See [StackOverflow](http://stackoverflow.com/questions/10371352/how-to-handle-field-named-as-keywords-in-jasmin) for more information about this.
+
 ### Challenges
 
 Challenges are meant to distinguish excellent solutions from good solutions. 
